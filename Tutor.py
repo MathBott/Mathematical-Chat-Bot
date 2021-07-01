@@ -130,22 +130,22 @@ class TheBrain:   # This class will be the main intelligence of the program.
     if choice == "1":
         prompt_user = Arithmetic.PromptUser()
         firstNumber = prompt_user['a']
-        secondNumber = prompt_user['a'] 
+        secondNumber = prompt_user['b'] 
         TheBrain.addInput(firstNumber, secondNumber) # This is where the Addition Class will go
     elif choice == "2":
         prompt_user = Arithmetic.PromptUser()
         firstNumber = prompt_user['a']
-        secondNumber = prompt_user['a'] 
+        secondNumber = prompt_user['b'] 
         TheBrain.subtractInput(firstNumber, secondNumber) # This is where the Subtraction Class will go
     elif choice == "3":
         prompt_user = Arithmetic.PromptUser()
         firstNumber = prompt_user['a']
-        secondNumber = prompt_user['a'] 
+        secondNumber = prompt_user['b'] 
         TheBrain.multiplyInput(firstNumber, secondNumber) # This is where the Multiplication Class will go
     elif choice == "4":
         prompt_user = Arithmetic.PromptUser()
         firstNumber = prompt_user['a']
-        secondNumber = prompt_user['a'] 
+        secondNumber = prompt_user['b'] 
         TheBrain.divideInput(firstNumber, secondNumber)
         
     elif choice == "5":
