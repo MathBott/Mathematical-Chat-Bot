@@ -7,24 +7,11 @@ class Arithmetic(object):
         self.a = a
         self.b = b
         self.operation = operation
-        
-    def subtraction(self):  #function definifion for subtraction
-        self.total = self.a - self.b
-        self.operation_name = "Subtraction"
-        self.PrintArthimeticMessage()
 
     def PrintArthimeticMessage(self):
+        Arithmetic.read_text_outloud(f"The answer for {self.operation_name} is: {self.a} {self.operation_to_speak} {self.b} = {self.total}\n\n")
         print(f"\n\n{self.operation_name} is: {self.a} {self.operation} {self.b} = {self.total}\n\n")#call the function
-    # #Class Project MathBot
     
-        # Handles dividing  the numbers
-    def divide(self): 
-        # Total is an instance variable that is set to the first number divided by the second
-        self.total = self.a / self.b
-        self.operation_name = "Division"
-        # Call the PrintMessage method
-        self.PrintArthimeticMessage()
-        
     def read_text_outloud(text_to_read, print_message = False):# initialize the converter
         converter = pyttsx3.init()
         converter.setProperty('rate',130)
@@ -53,6 +40,7 @@ class Arithmetic(object):
         # Returning the value of both intergers 
         self.total = self.a + self.b
         self.operation_name = "Addition"
+        self.operation_to_speak = "plus"
         # Call the PrintMessage method
         self.PrintArthimeticMessage()
         
@@ -61,5 +49,23 @@ class Arithmetic(object):
         #Returning the value of both integers
         self.total = self.a * self.b 
         self.operation_name = "Multiplication"
+        self.operation_to_speak = "times"
         # Call the PrintMessage method
+        self.PrintArthimeticMessage()
+
+    # Handles dividing  the numbers
+    def divide(self): 
+        # Total is an instance variable that is set to the first number divided by the second
+        self.total = self.a / self.b
+        self.operation_name = "Division"
+        self.operation_to_speak = "divided by"
+
+        # Call the PrintMessage method
+        self.PrintArthimeticMessage()
+        
+    def subtraction(self):  #function definifion for subtraction
+        self.total = self.a - self.b
+        self.operation_name = "Subtraction"
+        self.operation_to_speak = "minus"
+
         self.PrintArthimeticMessage()
