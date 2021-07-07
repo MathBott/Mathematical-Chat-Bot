@@ -29,10 +29,10 @@ class Arithmetic(object):
         d = dict()
         dual_output = "Please enter the first number you want to use"
         Arithmetic.read_text_outloud(dual_output)
-        d['a'] = int(input("Please enter the first number you want to use: "))
+        d['a'] = float(input("Please enter the first number you want to use: "))
         dual_output = "Please enter the second number you want to use"
         Arithmetic.read_text_outloud(dual_output)
-        d['b'] = int(input("Please enter the second number you want to use: "))
+        d['b'] = float(input("Please enter the second number you want to use: "))
         return d
         
     # Declaring the method 
