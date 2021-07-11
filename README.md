@@ -5,8 +5,15 @@
 1. Install [Python 3.7.9](https://www.python.org/downloads/release/python-379/) to your computer
 1. Open a new terminal and clone the repository
 1. `cd` into the repository
-1. Run the following command within your repositories terminal `pip install pyttsx3`.  
+1. Run the following packages within your repositories terminal
+    1. `pip install pyttsx3`
+    1. `pip install SpeechRecognition`
 1. ENJOY!
+
+## Troubleshooting:
+### Having a problem installing PyAudio? Try the following commands:
+    `pip install pipwin` 
+    `pipwin install pyaudio`
 
 ## Using MathBott
     MathBott can help you with addition, subtraction, multiplication, and division.  

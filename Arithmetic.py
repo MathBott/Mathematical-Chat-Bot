@@ -1,17 +1,18 @@
 #chatbot GUIDE From Professor Tony Hintons Class AI
 import pyttsx3
-
+import random
 #python program to subtract two numbers using function
 class Arithmetic(object):
+
     def __init__(self, a, b, operation):
         self.a = a
         self.b = b
         self.operation = operation
-
+        
     def PrintArthimeticMessage(self):
-        Arithmetic.read_text_outloud(f"The answer for {self.operation_name} is: {self.a} {self.operation_to_speak} {self.b} = {self.total}\n\n")
         print(f"\n\n{self.operation_name} is: {self.a} {self.operation} {self.b} = {self.total}\n\n")#call the function
-    
+        Arithmetic.read_text_outloud(f"The answer for {self.operation_name} is: {self.a} {self.operation_to_speak} {self.b} = {self.total}\n\n")
+
     def read_text_outloud(text_to_read, print_message = False):# initialize the converter
         converter = pyttsx3.init()
         converter.setProperty('rate',130)
@@ -20,8 +21,10 @@ class Arithmetic(object):
         if print_message:
             print(text_to_read)
             converter.say(text_to_read)
+            
         else:
             converter.say(text_to_read)
+            
 
         converter.runAndWait()
         
@@ -69,3 +72,10 @@ class Arithmetic(object):
         self.operation_to_speak = "minus"
 
         self.PrintArthimeticMessage()
+#chatbot GUIDE From Professor Tony Hintons Class AI
+
+
+
+    
+
+
