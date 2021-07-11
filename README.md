@@ -23,7 +23,7 @@
 
  ## Voice Activated Calculator
 
-    Please Listen Carefully To THe Instructions For The Proper Structure Of The Voice Pallot
+    Please Listen Carefully To The Instructions For The Proper Structure Of The Voice Pallot
     For Addition Say 10 Plus 4
     For Subtraction Say 10 Minus 4, Or You May Say 10 Mod 6 
     For Multiplication Say 10 Times 6 
