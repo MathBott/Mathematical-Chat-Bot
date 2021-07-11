@@ -29,7 +29,7 @@ def read_text_outloud(text_to_read, print_message, text_to_write = False):
 
     converter.runAndWait()
 print("\n\n\n\t\t\t The Mathematical Tutor Program\n")
-dual_output ="Welcome To The Mathematical Tutor Program, We Are Going To Help You Do Your Math Equations"
+dual_output ="Welcome To The Mathematical Tutor Program, We Are Going To Help You Do Your Math Equasions"
 read_text_outloud(dual_output, True)
 dual_output ="I Am Your Math Tutor Chatbot And I Am Here To Help You Learn Mathematics."
 read_text_outloud(dual_output, True)
@@ -112,7 +112,13 @@ class TheBrain:   # This class will be the main intelligence of the program.
                 my_mic_device = s_r.Microphone(device_index=1)
                 with my_mic_device as source:
                     # print(len(my_mic_device))
-                    dual_output = "Please Say What You Would Like To Calculate Only Speak Like The Example, For Example Say 3 plus 3"
+                    dual_output = "Please Listen Carefully To THe Instructions For The Proper Structure Of The Voice Pallot"
+                    dual_output = "For Addition Say 10 Plus 4"
+                    dual_output = "For Subtraction Say 10 Minus 4, Or You May Say 10 Mod 6"
+                    dual_output = "For Multiplication Say 10 Times 6"
+                    dual_output = "For Division Say 10 Divided 5"
+                    dual_output = "Have You Noticed You Can Not Use The Word By In Your Sentence"
+                    dual_output = "Please Say What You Would Like To Calculate Only Speak Like The Example For best Results"
                     read_text_outloud(dual_output, True)
                     r.adjust_for_ambient_noise(source, duration = 1)
                     audio = r.listen(source)
@@ -142,7 +148,9 @@ class TheBrain:   # This class will be the main intelligence of the program.
                 print(eval_binary_expr(*(my_string.split())))
             except:
                 print("Invalid Input ")
-                
+                #To get mod just say, ” 17 mod 9 ” It will give you the result.
+
+                #For division just say, “18 divided 7 
         #except ValueError to exclude accudental errors and loops
         except ValueError: # Break if the user did not enter an integer
             MainMenu.intro()
